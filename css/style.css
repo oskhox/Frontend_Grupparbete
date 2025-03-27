@@ -1,10 +1,11 @@
 .custom-header {
     position: relative;
     background-color: #f6f3f0;
-    height: 550px;
+    height: 650px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 150px;
 }
 
 .row-CTA {
@@ -63,6 +64,50 @@
     bottom: 0;
     width: 500px;
     left: 0;
+}
+
+.h1 {
+    font-family: Arial, serif;
+    color: #9178e4;
+    font-size: 45px;
+    margin: 10px 0;
+    text-align: center;
+
+
+
+}
+
+.custom-link {
+    font-family: Arial, serif;
+    width: 20%;
+    color: #9178e4;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+    margin: 10px 0;
+    text-align: left
+}
+
+.custom-link i {
+    margin-left: 8px;
+}
+
+.col-12 {
+    width: 100%;
+    background: #ffd979;
+    margin-top: 60px ;
+    margin-bottom: 40px;
+}
+
+.h2 {
+    color: #9178e4;
+    font-family: Arial, serif;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.custom-link:hover {
+    color: #000000;
 }
 
 @media (max-width: 768px) {
