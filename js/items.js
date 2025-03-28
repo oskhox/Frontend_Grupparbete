@@ -13,7 +13,7 @@ function getItems() {
         <img src="${item.image}" class="card-img-top img-fluid p-4" alt="${item.title}">
         <div class="card-body p-3 p-md-4">
                <div class="title-container">
-                <h5 class="card-title">${item.title}</h5> </div>
+               <h5 class="card-title">${item.title}</h5> </div>
             <div class="collapse" id="description-${item.id}">
                 <p>${item.description}</p>
             </div>
