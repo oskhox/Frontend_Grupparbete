@@ -8,10 +8,10 @@ function getItems() {
 
         items.forEach(item => {
             output += `
-        <div class="col-md-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
         <div class="card shadow-sm">
         <img src="${item.image}" class="card-img-top img-fluid p-4" alt="${item.title}">
-        <div class="card-body">
+        <div class="card-body p-3 p-md-4">
                <div class="title-container">
                 <h5 class="card-title">${item.title}</h5> </div>
             <div class="collapse" id="description-${item.id}">
