@@ -97,3 +97,20 @@
     height: 250px;
     object-fit: contain;
 }
+
+.btn {
+    color: white;
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
+}
+
+.title-container {
+    height: 7rem;
+}
+
+.card-title {
+    font-size: 16px;
+}
