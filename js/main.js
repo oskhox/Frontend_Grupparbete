@@ -6,6 +6,4 @@ function getHeader() {
         })
 }
 
-document.addEventListener('DOMContentLoaded', function() {
     getHeader();
-});

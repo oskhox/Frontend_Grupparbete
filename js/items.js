@@ -58,10 +58,8 @@ function getFourItemsByCategory(category, containerId) {
         document.getElementById(containerId).innerHTML = output;
     }
 }
-
-document.addEventListener("DOMContentLoaded", function() {
     getFourItemsByCategory('women\'s clothing', 'items-women-s-clothing');
     getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
     getFourItemsByCategory('jewelery', 'items-jewelery');
     getFourItemsByCategory('electronics', 'items-electronics');
-});
+
