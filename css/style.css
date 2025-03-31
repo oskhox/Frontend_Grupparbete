@@ -98,6 +98,65 @@
     object-fit: contain;
 }
 
+.form-page h1.w-100 {
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    color: #9178e4;
+    font-family: Arial, serif;
+    font-weight: bold;
+    margin-top: 12px;
+    background-color: #ffd979;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+
+}
+
+.form-page .btn-outline-primary {
+    background-color: #ffd979;
+    color: #9178e4;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 1.5rem;
+    font-weight:bold;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.form-page .btn-outline-primary:hover {
+    background-color: #9178e4;
+    transform: scale(1.05);
+    color: #ffd979;
+}
+
+.form-page .btn-outline-primary:focus {
+    outline: none; /* Remove outline on focus */
+}
+
+.label-colour {
+    color: #9178e4;
+}
+
+
+
+.btn {
+    color: white;
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
+}
+
+.title-container {
+    height: 7rem;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
 .btn {
     color: white;
     background-color: #9178e4;
