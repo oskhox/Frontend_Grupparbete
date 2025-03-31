@@ -35,3 +35,33 @@ function getItems() {
 }
 
 getItems();
+
+
+function getFourItemsByCategory(category, containerId) {
+    fetch(`https://fakestoreapi.com/products/category/${category}`)
+        .then(response => response.json())
+        .then(data => renderItems(data))
+
+    function renderItems(items) {
+        let output = "";
+
+        items.slice(0, 4).forEach(item => {
+            output += `
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="${item.image}" class="card-img-top" alt="${item.title}">
+                    </div>
+                </div>
+            `;
+        });
+
+        document.getElementById(containerId).innerHTML = output;
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    getFourItemsByCategory('women\'s clothing', 'items-women-s-clothing');
+    getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
+    getFourItemsByCategory('jewelery', 'items-jewelery');
+    getFourItemsByCategory('electronics', 'items-electronics');
+});
