@@ -191,7 +191,7 @@
     color: red;
 }
 
-.btn {
+.items-btn {
     color: white;
     background-color: #9178e4;
 }
@@ -255,6 +255,14 @@ footer.custom-footer ul li {
 
 .alert-success .alert-heading {
     color: #9178e4 !important;
+}
+
+#btn2 {
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
 }
 
 .btn-dark {
