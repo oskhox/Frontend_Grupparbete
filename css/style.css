@@ -66,11 +66,11 @@
     left: 0;
 }
 
-.h1 {
+.h1-firstpage{
     font-family: Arial, serif;
     color: #9178e4;
     font-size: 35px;
-    margin: 10px 0;
+    margin-bottom: 30px;
     text-align: center;
 
 }
@@ -97,10 +97,10 @@
     margin-bottom: 40px;
 }
 
-.h2 {
+.h2-firstpage {
     color: #9178e4;
     font-family: Arial, serif;
-    font-size: 20px;
+    font-size: 25px;
     margin: 5px;
 }
 
