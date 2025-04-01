@@ -216,3 +216,85 @@
 .card-title {
     font-size: 16px;
 }
+footer.custom-footer {
+    background-color: #ffd979 !important;
+    color: #9178e4 !important;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer.custom-footer h5,
+footer.custom-footer ul li,
+footer.custom-footer strong {
+    color: #9178e4 !important;
+}
+
+footer.custom-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer.custom-footer ul li {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #ffd979;
+    color: #9178e4;
+    font-family: Arial, sans-serif;
+}
+
+.alert-success {
+    background-color: #ffd979 !important;
+    color: #9178e4 !important;
+    border-color: #9178e4 !important;
+}
+
+.alert-success .alert-heading {
+    color: #9178e4 !important;
+}
+
+.btn-dark {
+    background-color: #ffd979 !important;
+    color: #9178e4 !important;
+    border: 2px solid #9178e4;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #9178e4 !important; /* Lila bakgrund vid hover */
+    color: #ffd979 !important; /* Gul text vid hover */
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+@media (max-width: 768px) {
+    .btn-dark {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+}
+
+.btn-custom {
+    background-color: #ffd979 !important;
+    color: #9178e4 !important;
+    border: 2px solid #9178e4;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #e6c06b !important;
+    color: #6b55b8 !important;
+    text-decoration: none;
+    transform: scale(1.05);
+}
