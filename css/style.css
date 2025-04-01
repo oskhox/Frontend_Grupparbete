@@ -8,13 +8,13 @@
     margin-bottom: 150px;
 }
 
-.row-CTA {
+.row-USP {
     background-color: #ffd979;
     text-align: center;
     width: 100%;
 }
 
-.CTA-text {
+.USP-text {
     justify-content: flex-start;
     display: flex;
     align-items: center;
@@ -23,7 +23,7 @@
     margin-top: 12px;
 }
 
-.CTA-text span {
+.USP-text span {
     margin: 0 20px;
 }
 
@@ -121,6 +121,7 @@
     }
     .navbar-toggler { border-color: #000; }
 }
+
 .card {
     animation: fadeIn 1s ease-in-out;
 }
