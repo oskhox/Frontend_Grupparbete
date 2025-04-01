@@ -46,9 +46,11 @@ getItems();
 function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
-        .then(data => renderItems(data))
+        .then(data => renderItems(data,containerId))
 
-    function renderItems(items) {
+}
+
+    function renderItems(items, containerId) {
         let output = "";
 
         items.slice(0, 4).forEach(item => {
@@ -62,8 +64,8 @@ function getFourItemsByCategory(category, containerId) {
         });
 
         document.getElementById(containerId).innerHTML = output;
-    }
 }
+
     getFourItemsByCategory('women\'s clothing', 'items-women-s-clothing');
     getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
     getFourItemsByCategory('jewelery', 'items-jewelery');

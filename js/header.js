@@ -5,5 +5,4 @@ function getHeader() {
             document.getElementById('header').innerHTML = data;
         })
 }
-
     getHeader();
