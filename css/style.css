@@ -98,9 +98,9 @@
 }
 
 .h2-firstpage {
-    color: #9178e4;
+    color: black;
     font-family: Arial, serif;
-    font-size: 25px;
+    font-size: 17px;
     margin: 5px;
 }
 
@@ -120,7 +120,13 @@
         margin: 5px 0;
         padding-left: 5px;
     }
-    .navbar-toggler { border-color: #000; }
+    .navbar-toggler { border-color: #000;
+    }
+    .btn-dark {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 
 .card {
@@ -268,14 +274,6 @@ footer.custom-footer ul li {
     text-decoration: none;
     transform: scale(1.05);
 
-}
-
-@media (max-width: 768px) {
-    .btn-dark {
-        width: 100%;
-        padding: 15px;
-        font-size: 18px;
-    }
 }
 
 .btn-custom {
