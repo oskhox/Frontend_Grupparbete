@@ -1,7 +1,13 @@
 function getItems() {
     fetch('https://fakestoreapi.com/products')
         .then(response => response.json())
-        .then(data => renderItems(data))
+        .then(data => {
+            saveItemsToLocalStorage(data);
+            renderItems(data);
+    })
+    function saveItemsToLocalStorage(items) {
+        localStorage.setItem('items', JSON.stringify(items));
+    }
 
     function renderItems(items) {
         let output = "";
@@ -24,7 +30,7 @@ function getItems() {
             <button class="btn btn-light mb-2 w-100" data-bs-toggle="collapse" data-bs-target="#description-${item.id}">
                 Mer info </button>
             <!--Beställnings-knapp-->
-            <a href="#" class="btn btn-light w-100" id="btn2">Beställ</a>
+            <a href="form.html?id=${item.id}" class="btn btn-light w-100 " id="btn2">Beställ</a>
         </div>
         </div>
         </div>

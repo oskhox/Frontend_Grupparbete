@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const productId = Number(params.get('id'));
+
+    const storedProducts = JSON.parse(localStorage.getItem("items"))
+    const selectedProduct = storedProducts.find(product=> product.id === productId);
+
+    if (selectedProduct) {
+        render(selectedProduct);
+    } else {
+        console.error("Product not found!");
+    }
+});
+
 document.getElementById("myForm").addEventListener('submit', saveData);
 
 function saveData(e) {
@@ -12,12 +26,12 @@ function saveData(e) {
 
     let confirmOrder = true;
 
-    if (!validateName(nameInput)) confirmOrder = false;
-    if (!validateEmail(emailInput)) confirmOrder = false;
-    if (!validatePhoneNumber(phoneNumberInput)) confirmOrder = false;
-    if (!validateAddress(addressInput)) confirmOrder = false;
-    if (!validateZipCode(zipCodeInput)) confirmOrder = false;
-    if (!validateCity(cityInput)) confirmOrder = false;
+    confirmOrder = validateName(nameInput)
+        && validateEmail(emailInput)
+        && validatePhoneNumber(phoneNumberInput)
+        && validateAddress(addressInput)
+        && validateZipCode(zipCodeInput)
+        && validateCity(cityInput);
 
     if (!confirmOrder) {
         //alert("Vänligen fyll i alla fält.")
@@ -25,15 +39,21 @@ function saveData(e) {
     }
 
     alert("Beställningen skickad")
+}
 
-    localStorage.setItem("order", JSON.stringify({
-        name: nameInput,
-        email: emailInput,
-        phoneNumber: phoneNumberInput,
-        address: addressInput,
-        zipCode: zipCodeInput,
-        city: cityInput
-    }));
+    function render(product) {
+
+        let output = `
+              <div class="card">
+               <img src = "${product.image}" class="card-img-top" alt= "${product.title}">
+                   <div class = "card-body">
+                       <h5 class="card-title">${product.title}</h5>
+                       <p class="card-text">${product.description}</p>
+                   </div>
+           </div>
+           `;
+        document.getElementById("card").innerHTML = output;
+    }
 
     function validateName(nameInput) {
         let validateNameInput = document.getElementById("inputValidationName")
@@ -104,6 +124,4 @@ function saveData(e) {
             validateCityInput.style.display = "none";
             return true;
         }
-    }
 }
-
