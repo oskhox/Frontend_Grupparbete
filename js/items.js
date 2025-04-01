@@ -30,7 +30,7 @@ function getItems() {
             <button class="btn btn-light mb-2 w-100" data-bs-toggle="collapse" data-bs-target="#description-${item.id}">
                 Mer info </button>
             <!--Beställnings-knapp-->
-            <a href="form.html?id=${item.id}" class="btn btn-light w-100 " id="btn2">Beställ</a>
+            <a href="form.html?id=${item.id}" class="btn btn-light w-100" id="btn2">Beställ</a>
         </div>
         </div>
         </div>
@@ -68,4 +68,3 @@ function getFourItemsByCategory(category, containerId) {
     getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
     getFourItemsByCategory('jewelery', 'items-jewelery');
     getFourItemsByCategory('electronics', 'items-electronics');
-
