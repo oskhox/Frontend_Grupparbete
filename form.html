@@ -1,125 +1,80 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
+   <meta charset="UTF-8">
+    <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/form.js" defer></script>
+</head>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="css/style.css">
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-  <script src="js/form.js" defer></script>
 <body class = "form-page">
-<header class = "custom-header">
-<div class="row-CTA fixed-top">
-  <p class="CTA-text">
-    <span><i class="bi bi-box"></i> Snabba leveranser</span>
-    <span><i class="bi bi-box"></i> Fri frakt</span>
-    <span><i class="bi bi-box"></i> Hemleverans</span>
-  </p>
-</div>
-
-<nav class="navbar navbar-expand-lg">
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link" href="herr-klader.html">Herrkläder</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="dam-klader.html">Damkläder</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="smycken.html">Smycken</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="elektronik.html">Elektronik</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="bestallning.html">Beställning</a> </li>
-    </ul>
-  </div>
-</nav>
-<a class="logo" href="index.html">
-    <img src="images/POSE_LOGO.svg" alt="POSE_LOGO" width="400">
-  </a>
+<header>
 </header>
 
 <div class ="container">
   <div class="row mx-2 my-1 gy-3">
-    <h1 class ="w-100">BESTÄLLNINGSFORMULÄR</h1>
+    <h1 class ="w-100">Beställningsformulär</h1>
     <form id ="myForm">
-      <div id = "productInfo">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
+      <div id = "card">
       </div>
 
         <div class="row">
           <div class="col-md-6">
           <label for = "name" class = "mt-3 label-colour" >Namn</label>
           <input type = "text" class = "form-control mt-1" id ="name" placeholder = "Förnamn  Efternamn">
-          <div id = "inputValidationName" class = "warning" style="display: none; color: red"> Skriv in ett giltigt namn (endast bokstäver) </div>
+          <div id = "inputValidationName" class = "validation-message" > Skriv in ett giltigt namn (endast bokstäver) </div>
         </div>
         </div>
         <div class="row">
             <div class="col-md-6">
           <label for = "email" class = "mt-3 label-colour">E-post</label>
           <input type = "text" class = "form-control mt-1" id = "email" placeholder="name@exempel.se">
-          <div id = "inputValidationEmail" class = "warning" style="display: none; color: red"> Skriv in en giltig e-postadress (måste innehålla @ och max 50 tecken  ) </div>
+          <div id = "inputValidationEmail" class = "validation-message"> Skriv in en giltig e-postadress (måste innehålla @ och max 50 tecken  ) </div>
         </div>
           </div>
           <div class="row">
             <div class="col-md-6">
           <label for = "phonenumber" class = "mt-3 label-colour">Telefonnummer</label>
           <input type = "text" class = "form-control mt-1" id = "phonenumber" placeholder="070-1234567">
-          <div id = "inputValidationPhoneNumber" class = "warning" style="display: none; color: red";> Skriv in ett giltigt telefonnummer (Max 50 tecken  ) </div>
+          <div id = "inputValidationPhoneNumber" class = "validation-message" > Skriv in ett giltigt telefonnummer (Max 50 tecken  ) </div>
         </div>
         </div>
             <div class="row">
               <div class="col-md-6">
           <label for = "address" class = "mt-3 label-colour">Adress</label>
           <input type = "text" class = "form-control mt-1" id = "address" placeholder="Testvägen 1">
-          <div id = "inputValidationAddress" class = "warning" style="display: none; color: red";> Skriv in en giltig adress (Min 2 tecken och Max 50 tecken ) </div>
+          <div id = "inputValidationAddress" class = "validation-message"> Skriv in en giltig adress (Min 2 tecken och Max 50 tecken ) </div>
         </div>
             </div>
               <div class="row">
                 <div class="col-md-6">
           <label for = "zipcode" class = "mt-3 label-colour">Postnummer</label>
           <input type = "text" class = "form-control mt-1" id = "zipcode" placeholder="12345">
-          <div id = "inputValidationZipCode" class = "warning" style="display: none; color: red";> Skriv in en giltig postadress (Exakt 5 siffor) </div>
+          <div id = "inputValidationZipCode" class = "validation-message"> Skriv in en giltig postadress (Exakt 5 siffor) </div>
         </div>
               </div>
                 <div class="row">
                   <div class="col-md-6">
           <label for = "city" class = "mt-3 label-colour">Ort</label>
           <input type = "text" class = "form-control mt-1" id ="city" placeholder="Stockholm">
-          <div id = "inputValidationCity" class = "warning" style="display: none; color: red";> Skriv in en giltig ort (Min 2 tecken och Max 50 tecken ) </div>
+          <div id = "inputValidationCity" class = "validation-message"> Skriv in en giltig ort (Min 2 tecken och Max 50 tecken ) </div>
         </div>
                 </div>
                   <div class="row">
                     <div class="col-md-6">
-          <button type =submit class = "btn btn-outline-primary btn-sm mt-3">Beställ</button>
+          <button type =submit class = "btn-form btn-sm mt-3">Beställ</button>
         </div>
                   </div>
     </form>
   </div>
   </div>
-<footer class="bg-dark text-white py-4">
-  <div class="container text-start">
-    <h5>Kontaktinformation</h5>
-    <ul class="list-unstyled">
-      <li><strong>Företagsnamn:</strong> Fake Store AB</li>
-      <li><strong>E-post:</strong> info@fakestore.com</li>
-      <li><strong>Telefon:</strong> 070-1234567</li>
-      <li><strong>Adress:</strong> Fikagatan 12, 123 45 Stockholm</li>
-    </ul>
-  </div>
+<footer>
 </footer>
 </body>
 </html>

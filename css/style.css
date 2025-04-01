@@ -142,46 +142,44 @@
 }
 
 .form-page h1.w-100 {
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     display: flex;
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
-    font-weight: bold;
+   /* font-weight: bold;*/
     margin-top: 12px;
     background-color: #ffd979;
-    text-align: center;
-    width: 100%;
     height: 100px;
 
 }
 
-.form-page .btn-outline-primary {
-    background-color: #ffd979;
-    color: #9178e4;
+.form-page .btn-form {
+    background-color: #9178e4;
+    color: #ffffff;
     border-radius: 12px;
     padding: 12px 24px;
     font-size: 1.5rem;
-    font-weight:bold;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    width:100%
 }
 
-.form-page .btn-outline-primary:hover {
-    background-color: #9178e4;
+.form-page .btn-form:hover {
+    background-color: #ffd979;
     transform: scale(1.05);
-    color: #ffd979;
-}
-
-.form-page .btn-outline-primary:focus {
-    outline: none; /* Remove outline on focus */
+    color: #ffffff;
+    width:100%
 }
 
 .label-colour {
     color: #9178e4;
 }
 
-
+.validation-message {
+    display: none;
+    color: red;
+}
 
 .btn {
     color: white;
