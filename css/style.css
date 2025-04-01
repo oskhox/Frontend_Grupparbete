@@ -154,7 +154,7 @@
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
-   /* font-weight: bold;*/
+    /* font-weight: bold;*/
     margin-top: 12px;
     background-color: #ffd979;
     text-align: center;
@@ -246,6 +246,7 @@ footer.custom-footer ul li {
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
+
 
 .alert-success {
     background-color: #ffd979 !important;
