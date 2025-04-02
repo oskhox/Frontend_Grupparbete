@@ -30,7 +30,7 @@ function getItems() {
             <button class="btn btn-light mb-2 w-100" data-bs-toggle="collapse" data-bs-target="#description-${item.id}">
                 Mer info </button>
             <!--Beställnings-knapp-->
-            <a href="orderform.html?id=${item.id}" class="btn btn-light w-100 " id="btn2">Beställ</a>
+            <a href="form.html?id=${item.id}" class="btn btn-light w-100 " id="btn2">Beställ</a>
         </div>
         </div>
         </div>
@@ -45,11 +45,11 @@ getItems();
 function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
-        .then(data => renderItems(data,containerId))
+        .then(data => renderItemsImages(data,containerId))
 
 }
 
-    function renderItems(items, containerId) {
+    function renderItemsImages(items, containerId) {
         let output = "";
 
         items.slice(0, 4).forEach(item => {
