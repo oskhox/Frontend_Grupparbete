@@ -53,7 +53,7 @@ function getFourItemsByCategory(category, containerId) {
 
         items.slice(0, 4).forEach(item => {
             output += `
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
                     <div class="card">
                         <img src="${item.image}" class="card-img-top p-4" alt="${item.title}">
                     </div>
