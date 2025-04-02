@@ -42,7 +42,6 @@ function getItems() {
 
 getItems();
 
-
 function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
@@ -70,4 +69,3 @@ function getFourItemsByCategory(category, containerId) {
     getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
     getFourItemsByCategory('jewelery', 'items-jewelery');
     getFourItemsByCategory('electronics', 'items-electronics');
-
