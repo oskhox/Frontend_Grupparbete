@@ -44,11 +44,11 @@ function saveData(e) {
     function render(product) {
 
         let output = `
-              <div class="card">
-               <img src = "${product.image}" class="card-img-top" alt= "${product.title}">
-                   <div class = "card-body">
-                       <h5 class="card-title">${product.title}</h5>
-                       <p class="card-text">${product.description}</p>
+              <div class="product-display" >
+               <img src = "${product.image}" class="product-display-img-top" alt= "${product.title}">
+                   <div class = "product-display-body">
+                       <h5 class="product-display-title">${product.title}</h5>
+                        <p class="product-display-text">${product.description}</p> 
                    </div>
            </div>
            `;

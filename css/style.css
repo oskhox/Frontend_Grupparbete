@@ -148,14 +148,12 @@
 }
 
 .form-page h1.w-100 {
-    /*justify-content: flex-start;*/
     display: flex;
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
     /* font-weight: bold;*/
     margin-top: 12px;
-    background-color: #ffd979;
     text-align: center;
     width: 100%;
     height: 100px;
@@ -169,15 +167,13 @@
     font-size: 1.5rem;
     font-weight:bold;
     border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
     width:100%
 }
 
 .form-page .btn-form:hover {
     background-color: #ffd979;
     transform: scale(1.05);
-    color: #ffffff;
-    width:100%
+    color: #000000;
 }
 
 .label-colour {
@@ -213,6 +209,52 @@
 
 #btn2:hover {
     background-color: #ffd979;
+}
+
+.product-display {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.product-display-img-top {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+
+.product-display-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-display-title {
+    font-size: 14px;
+}
+
+.product-display-text {
+    font-size: 12px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .product-display {
+        flex-direction: column;
+    }
+
+    .product-display-img-top {
+    }
+
+    .product-display-body {
+        width: 100%;
+        padding: 10px 0;
+    }
 }
 
 .title-container {
