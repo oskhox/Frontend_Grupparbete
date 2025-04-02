@@ -221,7 +221,12 @@
 
 .card-title {
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 footer.custom-footer {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
