@@ -21,14 +21,11 @@
     color: #9178e4;
     font-family: Arial, serif;
     margin-top: 12px;
+    margin-right: 5px;
 }
 
 .custom-header .USP-text span {
     margin: 0 20px;
-}
-
-.custom-header .USP-text i {
-    margin-right: 5px;
 }
 
 .custom-header .navbar {
@@ -66,11 +63,9 @@
     left: 0;
 }
 
-.h1-firstpage{
+.h1-container h1 {
+    font-size: 30px;
     font-family: Arial, serif;
-    color: #9178e4;
-    font-size: 35px;
-    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -89,18 +84,14 @@
     margin-left: 8px;
 }
 
-.first-page-col12 {
+.col3 h2 {
     width: 100%;
     background: #ffd979;
     margin-top: 60px ;
     margin-bottom: 40px;
-}
-
-.h2-firstpage {
-    color: black;
-    font-family: Arial, serif;
-    font-size: 17px;
-    margin: 5px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .custom-link:hover {
@@ -121,7 +112,6 @@
         width: 100%;
         background-color: #ffffff;
         padding: 10px 0;
-
     }
 
     .navbar {
@@ -130,7 +120,6 @@
         position: relative;
         height: 220px;
         margin-top: 60px;
-
     }
 
     .navbar-toggler {
@@ -298,7 +287,7 @@
 .card-title {
     font-size: 16px;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -306,8 +295,9 @@
 footer.custom-footer {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 footer.custom-footer h5,
@@ -357,8 +347,8 @@ footer.custom-footer ul li {
 }
 
 .btn-dark:hover {
-    background-color: #9178e4 !important; /* Lila bakgrund vid hover */
-    color: #ffd979 !important; /* Gul text vid hover */
+    background-color: #9178e4 !important;
+    color: #ffd979 !important;
     text-decoration: none;
     transform: scale(1.05);
 }
