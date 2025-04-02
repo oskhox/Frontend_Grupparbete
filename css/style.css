@@ -72,7 +72,6 @@
     font-size: 35px;
     margin-bottom: 30px;
     text-align: center;
-
 }
 
 .custom-link {
@@ -149,37 +148,32 @@
 }
 
 .form-page h1.w-100 {
-    /*justify-content: flex-start;*/
     display: flex;
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
     /* font-weight: bold;*/
     margin-top: 12px;
-    background-color: #ffd979;
     text-align: center;
     width: 100%;
     height: 100px;
-
 }
 
 .form-page .btn-form {
     background-color: #9178e4;
     color: #ffffff;
     border-radius: 12px;
-    padding: 12px 24px;
+    padding: 6px 12px;
     font-size: 1.5rem;
     font-weight:bold;
     border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    width:100%
+    min-width:auto;
 }
 
 .form-page .btn-form:hover {
     background-color: #ffd979;
     transform: scale(1.05);
-    color: #ffffff;
-    width:100%
+    color: #000000;
 }
 
 .label-colour {
@@ -191,7 +185,7 @@
     color: red;
 }
 
-.btn {
+.items-btn {
     color: white;
     background-color: #9178e4;
 }
@@ -217,13 +211,64 @@
     background-color: #ffd979;
 }
 
+.product-display {
+    display: flex;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.product-display-img-top {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    flex-shrink: 0;
+
+}
+
+.product-display-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-display-title {
+    font-size: 14px;
+}
+
+.product-display-text {
+    font-size: 12px;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+    .product-display {
+        flex-direction: column;
+    }
+
+    .product-display-img-top {
+    }
+
+    .product-display-body {
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
 .title-container {
     height: 7rem;
 }
 
 .card-title {
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 footer.custom-footer {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
@@ -258,6 +303,14 @@ footer.custom-footer ul li {
     color: #9178e4 !important;
 }
 
+#btn2 {
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
+}
+
 .btn-dark {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
@@ -274,7 +327,6 @@ footer.custom-footer ul li {
     color: #ffd979 !important; /* Gul text vid hover */
     text-decoration: none;
     transform: scale(1.05);
-
 }
 
 .btn-custom {
