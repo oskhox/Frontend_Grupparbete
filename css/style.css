@@ -84,7 +84,7 @@
     margin-left: 8px;
 }
 
-.col3 h2 {
+.category h2 {
     width: 100%;
     background: #ffd979;
     margin-top: 60px ;
@@ -298,6 +298,7 @@ footer.custom-footer {
     padding: 40px 0;
     text-align: center;
     margin-top: 20px;
+    max-width: 100%;
 }
 
 footer.custom-footer h5,
@@ -309,6 +310,8 @@ footer.custom-footer strong {
 footer.custom-footer ul {
     list-style: none;
     padding: 0;
+    width: 100%;
+
 }
 
 footer.custom-footer ul li {
