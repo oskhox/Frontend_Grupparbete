@@ -72,7 +72,6 @@
     font-size: 35px;
     margin-bottom: 30px;
     text-align: center;
-
 }
 
 .custom-link {
@@ -160,7 +159,6 @@
     text-align: center;
     width: 100%;
     height: 100px;
-
 }
 
 .form-page .btn-form {
@@ -191,7 +189,7 @@
     color: red;
 }
 
-.btn {
+.items-btn {
     color: white;
     background-color: #9178e4;
 }
@@ -223,7 +221,12 @@
 
 .card-title {
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 footer.custom-footer {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
@@ -258,6 +261,14 @@ footer.custom-footer ul li {
     color: #9178e4 !important;
 }
 
+#btn2 {
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
+}
+
 .btn-dark {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
@@ -274,7 +285,6 @@ footer.custom-footer ul li {
     color: #ffd979 !important; /* Gul text vid hover */
     text-decoration: none;
     transform: scale(1.05);
-
 }
 
 .btn-custom {
