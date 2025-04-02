@@ -8,13 +8,13 @@
     margin-bottom: 150px;
 }
 
-.row-USP {
+.custom-header .row-USP {
     background-color: #ffd979;
     text-align: center;
     width: 100%;
 }
 
-.USP-text {
+.custom-header .USP-text {
     justify-content: flex-start;
     display: flex;
     align-items: center;
@@ -23,15 +23,15 @@
     margin-top: 12px;
 }
 
-.USP-text span {
+.custom-header .USP-text span {
     margin: 0 20px;
 }
 
-.USP-text i {
+.custom-header .USP-text i {
     margin-right: 5px;
 }
 
-.navbar {
+.custom-header .navbar {
     width: 100%;
     background: #ffffff;
     justify-content: center;
@@ -42,37 +42,36 @@
     height: 90px;
 }
 
-.navbar-nav {
+.custom-header .navbar-nav {
     display: flex;
     justify-content: center;
     flex-direction: row;
     padding-right: 10px;
 }
 
-.nav-link {
+.custom-header .nav-link {
     color: #9178e4;
     font-weight: bold;
     font-family: sans-serif;
 }
 
-.nav-item {
+.custom-header .nav-item {
     margin: 0 5px;
 }
 
-.logo img {
+.custom-header .logo img {
     position: absolute;
     bottom: 0;
     width: 500px;
     left: 0;
 }
 
-.h1 {
+.h1-firstpage{
     font-family: Arial, serif;
     color: #9178e4;
     font-size: 35px;
-    margin: 10px 0;
+    margin-bottom: 30px;
     text-align: center;
-
 }
 
 .custom-link {
@@ -97,10 +96,10 @@
     margin-bottom: 40px;
 }
 
-.h2 {
-    color: #9178e4;
+.h2-firstpage {
+    color: black;
     font-family: Arial, serif;
-    font-size: 20px;
+    font-size: 17px;
     margin: 5px;
 }
 
@@ -120,7 +119,13 @@
         margin: 5px 0;
         padding-left: 5px;
     }
-    .navbar-toggler { border-color: #000; }
+    .navbar-toggler { border-color: #000;
+    }
+    .btn-dark {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
 }
 
 .card {
@@ -147,12 +152,11 @@
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
-   /* font-weight: bold;*/
+    /* font-weight: bold;*/
     margin-top: 12px;
     text-align: center;
     width: 100%;
     height: 100px;
-
 }
 
 .form-page .btn-form {
@@ -163,6 +167,7 @@
     font-size: 1.5rem;
     font-weight:bold;
     border: none;
+    width:100%
 }
 
 .form-page .btn-form:hover {
@@ -180,7 +185,7 @@
     color: red;
 }
 
-.btn {
+.items-btn {
     color: white;
     background-color: #9178e4;
 }
@@ -258,7 +263,12 @@
 
 .card-title {
     font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+
 footer.custom-footer {
     background-color: #ffd979 !important;
     color: #9178e4 !important;
@@ -281,11 +291,7 @@ footer.custom-footer ul li {
     font-size: 16px;
     font-family: Arial, sans-serif;
 }
-body {
-    background-color: #ffd979;
-    color: #9178e4;
-    font-family: Arial, sans-serif;
-}
+
 
 .alert-success {
     background-color: #ffd979 !important;
@@ -295,6 +301,14 @@ body {
 
 .alert-success .alert-heading {
     color: #9178e4 !important;
+}
+
+#btn2 {
+    background-color: #9178e4;
+}
+
+#btn2:hover {
+    background-color: #ffd979;
 }
 
 .btn-dark {
@@ -313,15 +327,6 @@ body {
     color: #ffd979 !important; /* Gul text vid hover */
     text-decoration: none;
     transform: scale(1.05);
-
-}
-
-@media (max-width: 768px) {
-    .btn-dark {
-        width: 100%;
-        padding: 15px;
-        font-size: 18px;
-    }
 }
 
 .btn-custom {
