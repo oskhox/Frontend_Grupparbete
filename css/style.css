@@ -295,7 +295,7 @@
 
 footer.custom-footer {
     background-color: #ffd979 !important;
-    color: #9178e4 !important;
+    color: #000000 !important;
     padding: 40px 0;
     text-align: center;
     margin-top: 20px;
@@ -305,7 +305,7 @@ footer.custom-footer {
 footer.custom-footer h5,
 footer.custom-footer ul li,
 footer.custom-footer strong {
-    color: #9178e4 !important;
+    color: #000000 !important;
 }
 
 footer.custom-footer ul {
