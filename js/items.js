@@ -47,7 +47,7 @@ function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
         .then(data => renderItemsImages(data, containerId))
-        .catch(error => console.error("Error fetching data:", error));
+        .catch(error => console.error("Fel vid hämtning av data:", error));
 }
 
 function renderItemsImages(items, containerId) {
