@@ -34,11 +34,10 @@ function saveData(e) {
         && validateCity(cityInput);
 
     if (!confirmOrder) {
-        //alert("Vänligen fyll i alla fält.")
         return;
     }
 
-    alert("Beställningen skickad")
+    window.location.href = "orderconfirmation.html";
 }
 
     function render(product) {
