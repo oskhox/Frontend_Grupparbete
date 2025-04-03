@@ -12,6 +12,7 @@
     background-color: #ffd979;
     text-align: center;
     width: 100%;
+    padding-bottom: 10px;
 }
 
 .custom-header .USP-text {
@@ -21,14 +22,11 @@
     color: #9178e4;
     font-family: Arial, serif;
     margin-top: 12px;
+    margin-right: 5px;
 }
 
 .custom-header .USP-text span {
     margin: 0 20px;
-}
-
-.custom-header .USP-text i {
-    margin-right: 5px;
 }
 
 .custom-header .navbar {
@@ -66,11 +64,9 @@
     left: 0;
 }
 
-.h1-firstpage{
+.h1-container h1 {
+    font-size: 30px;
     font-family: Arial, serif;
-    color: #9178e4;
-    font-size: 35px;
-    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -78,29 +74,25 @@
     font-family: Arial, serif;
     width: 20%;
     color: #9178e4;
-    font-size: 15px;
+    font-size: 18px;
     padding: 5px 10px;
     text-decoration: none;
     margin: 10px 0;
-    text-align: left
+    text-align: center;
 }
 
 .custom-link i {
     margin-left: 8px;
 }
 
-.first-page-col12 {
+.category h2 {
     width: 100%;
     background: #ffd979;
     margin-top: 60px ;
     margin-bottom: 40px;
-}
-
-.h2-firstpage {
-    color: black;
-    font-family: Arial, serif;
-    font-size: 17px;
-    margin: 5px;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .custom-link:hover {
@@ -108,19 +100,52 @@
 }
 
 @media (max-width: 768px) {
-    .logo img { width: 200px; }
-    .navbar { padding-right: 5px; }
+    .logo img {
+        width: 80%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .navbar-collapse {
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 220px;
+        margin-top: 60px;
+    }
+
+    .navbar-toggler {
+        position: fixed;
+        margin-top: 180px;
+        right: 0;
+        margin-right: 10px;
+        z-index: 1000;
+        margin-bottom: 50px;
+    }
+
     .navbar-nav {
+        display: flex;
         flex-direction: column;
-        max-width: 200px;
-        padding-right: 0;
+        width: 100%;
+        height: 50px;
+        margin-top: 50px;
+
     }
-    .navbar-nav .nav-item {
-        margin: 5px 0;
-        padding-left: 5px;
+
+    .custom-header .USP-text {
+        flex-direction: column;
+        gap: 5px;
     }
-    .navbar-toggler { border-color: #000;
-    }
+
     .btn-dark {
         width: 100%;
         padding: 15px;
@@ -152,7 +177,6 @@
     align-items: center;
     color: #9178e4;
     font-family: Arial, serif;
-    /* font-weight: bold;*/
     margin-top: 12px;
     text-align: center;
     width: 100%;
@@ -264,27 +288,31 @@
 .card-title {
     font-size: 16px;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* Show only 5 lines */
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
 footer.custom-footer {
     background-color: #ffd979 !important;
-    color: #9178e4 !important;
-    padding: 20px 0;
+    color: #000000 !important;
+    padding: 40px 0;
     text-align: center;
+    margin-top: 20px;
+    max-width: 100%;
 }
 
 footer.custom-footer h5,
 footer.custom-footer ul li,
 footer.custom-footer strong {
-    color: #9178e4 !important;
+    color: #000000 !important;
 }
 
 footer.custom-footer ul {
     list-style: none;
     padding: 0;
+    width: 100%;
+
 }
 
 footer.custom-footer ul li {
@@ -323,8 +351,8 @@ footer.custom-footer ul li {
 }
 
 .btn-dark:hover {
-    background-color: #9178e4 !important; /* Lila bakgrund vid hover */
-    color: #ffd979 !important; /* Gul text vid hover */
+    background-color: #9178e4 !important;
+    color: #ffd979 !important;
     text-decoration: none;
     transform: scale(1.05);
 }

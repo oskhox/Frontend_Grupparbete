@@ -42,15 +42,14 @@ function getItems() {
 
 getItems();
 
-
 function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
-        .then(data => renderItems(data,containerId))
+        .then(data => renderItemsImages(data,containerId))
 
 }
 
-    function renderItems(items, containerId) {
+    function renderItemsImages(items, containerId) {
         let output = "";
 
         items.slice(0, 4).forEach(item => {
@@ -70,4 +69,3 @@ function getFourItemsByCategory(category, containerId) {
     getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
     getFourItemsByCategory('jewelery', 'items-jewelery');
     getFourItemsByCategory('electronics', 'items-electronics');
-
