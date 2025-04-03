@@ -42,30 +42,37 @@ function getItems() {
 
 getItems();
 
+
 function getFourItemsByCategory(category, containerId) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
         .then(response => response.json())
-        .then(data => renderItemsImages(data,containerId))
-
+        .then(data => renderItemsImages(data, containerId))
+        .catch(error => console.error("Error fetching data:", error));
 }
 
-    function renderItemsImages(items, containerId) {
-        let output = "";
+function renderItemsImages(items, containerId) {
+    let output = "";
 
-        items.slice(0, 4).forEach(item => {
-            output += `
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-                    <div class="card shadow-sm">
-                        <img src="${item.image}" class="card-img-top p-4" alt="${item.title}">
-                    </div>
+    items.slice(0, 4).forEach(item => {
+        output += `
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="${item.image}" class="card-img-top p-4" alt="${item.title}">
                 </div>
-            `;
-        });
+            </div>
+        `;
+    });
 
-        document.getElementById(containerId).innerHTML = output;
+    document.getElementById(containerId).innerHTML = output;
 }
 
-    getFourItemsByCategory('women\'s clothing', 'items-women-s-clothing');
-    getFourItemsByCategory('men\'s clothing', 'items-men-s-clothing');
-    getFourItemsByCategory('jewelery', 'items-jewelery');
-    getFourItemsByCategory('electronics', 'items-electronics');
+const categories = [
+    { name: "women's clothing", containerId: "items-women-s-clothing" },
+    { name: "men's clothing", containerId: "items-men-s-clothing" },
+    { name: "jewelery", containerId: "items-jewelery" },
+    { name: "electronics", containerId: "items-electronics" }
+];
+
+categories.forEach(category => {
+    getFourItemsByCategory(category.name, category.containerId);
+});
