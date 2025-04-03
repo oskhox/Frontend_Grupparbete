@@ -323,12 +323,12 @@ footer.custom-footer ul li {
 
 .alert-success {
     background-color: #ffd979 !important;
-    color: #9178e4 !important;
-    border-color: #9178e4 !important;
+    color: black !important;
+    border-color: black !important;
 }
 
 .alert-success .alert-heading {
-    color: #9178e4 !important;
+    color: black !important;
 }
 
 #btn2 {
@@ -359,7 +359,7 @@ footer.custom-footer ul li {
 
 .btn-custom {
     background-color: #ffd979 !important;
-    color: #9178e4 !important;
+    color: black !important;
     border: 2px solid #9178e4;
     padding: 10px 20px;
     font-size: 16px;
